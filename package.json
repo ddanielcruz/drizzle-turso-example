@@ -1,0 +1,22 @@
+{
+  "name": "drizzle-turso-example",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx --env-file=.env src/main",
+    "drizzle:generate": "drizzle-kit generate:sqlite",
+    "drizzle:migrate": "tsx --env-file=.env src/drizzle/migrate"
+  },
+  "dependencies": {
+    "@libsql/client": "0.4.0-pre.5",
+    "drizzle-orm": "^0.29.3",
+    "env-var": "^7.4.1",
+    "tsx": "^4.7.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.10.6",
+    "drizzle-kit": "^0.20.9",
+    "typescript": "^5.3.3"
+  }
+}
